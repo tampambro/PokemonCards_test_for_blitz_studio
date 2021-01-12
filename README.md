@@ -1,1 +1,0 @@
-# PokemonCards_test_for_blitz_studio

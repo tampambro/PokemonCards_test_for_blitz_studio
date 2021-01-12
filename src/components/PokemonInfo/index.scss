@@ -1,0 +1,36 @@
+th {
+  text-align: center;
+}
+
+tr td:last-of-type {
+  text-align: center;
+}
+
+.infoWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1.5rem;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+.tableWrapper {
+  width: 60vw;
+}
+
+.infoWrapper__backButton {
+  height: 300px;
+  @media (max-width: 480px) {
+    height: 40px;
+    position: relative;
+    margin: 20px 0;
+    top: 10px;
+  }
+}

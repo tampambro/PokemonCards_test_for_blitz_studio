@@ -1,0 +1,30 @@
+@mixin forFlex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ScrollButtons {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  height: 30vh;
+}
+
+.ScrollButtons__up,
+.ScrollButtons__down {
+  width: 2rem;
+  height: 2rem;
+  background-color: #dff0d8;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding-bottom: 2px;
+  cursor: pointer;
+  @include forFlex();
+}
+
+.ScrollButtons__down {
+  position: absolute;
+  bottom: 0;
+}
